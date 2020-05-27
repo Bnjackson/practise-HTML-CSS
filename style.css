@@ -1,6 +1,21 @@
 body {
-    background-color: white;
+  background-color:#dae0de;
+  font: normal, 16px, arial, helvetica, sans-serif;
+  /*Shorter way of specifying font includes font-weight, font-size and font-family.*/
+  line-height: 1.4em;
+  margin: 0;
+  /*Setting margin to 0 removes the spaces from the side exept for the top because headings have margin by default*/
 }
-#div1 {
-    float; right: ;
+
+.container {
+  float: right;
+  width: 320px;
+  height: 300px;
+  background-color: teal;
+}
+
+.box-1 {
+  background-color: #333;
+  color: #fff;
+  width: 300px;
 }

@@ -14,6 +14,27 @@ body {
   /*Setting margin to 0 removes the spaces from the side exept for the top because headings have margin by default- margin is the area around elements to seperate them from other elements*/
 }
 
+a {
+  text-decoration: none;
+  /*Removes underline from anchor tags*/
+  color: black;
+}
+
+a:hover {
+  color: white;
+}
+/*The hover selector styles elements when hovered over*/
+
+a:visited {
+  color: blue;
+}
+/*Styles elements you have visited*/
+
+a:active {
+  color: yellow;
+}
+/*Styles elment when you click on it*/
+
 .container {
   width: 80%;
   /*Setting the margin to a percentage makes it responsive so the container responds with the browser or device*/
@@ -31,6 +52,7 @@ body {
   margin: 20px;
   /*Margin controls the space around the element and seperates them from other elements*/
 }
+
 .box-1  h1{
   font-family: times;
   font-style:italic;
@@ -39,4 +61,30 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   word-spacing: 0.2em;
+}
+
+.box-2 {
+  border: 2px dotted blue;
+  padding: 25px;
+  margin: 20px;
+}
+.categories {
+  border: 1px dotted red;
+  background-color: pink;
+  padding: 1px;
+}
+
+.categories h2 {
+    text-align: center;
+}
+
+.categories ul {
+    list-style: none;
+    padding-left: -10px;
+}
+.categories li {
+  padding-bottom: 6px;
+  border-bottom-style: solid;
+  border-bottom-color: grey;
+
 }

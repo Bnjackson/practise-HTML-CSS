@@ -18,6 +18,8 @@ a {
   text-decoration: none;
   /*Removes underline from anchor tags*/
   color: black;
+  display: block;
+  /*Display block is needed to change an anchor tags width and height*/
 }
 
 a:hover {
@@ -35,11 +37,26 @@ a:active {
 }
 /*Styles elment when you click on it*/
 
+
 .container {
   width: 80%;
   /*Setting the margin to a percentage makes it responsive so the container responds with the browser or device*/
   margin: auto;
   /*Margin auto sets a even margin on all sides- the same on all sides */
+}
+
+.button {
+  background-color: #333;
+  color: white;
+  border: none;
+  height: 20px;
+  width: 100px;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #FF4F1F;
+  color: white;
 }
 
 .box-1 {
@@ -82,7 +99,8 @@ a:active {
 
 .categories ul {
     list-style: none;
-  }
+}
+
 .categories li {
   padding-bottom: 6px;
   border-bottom-style: solid;
@@ -112,10 +130,6 @@ a:active {
   resize: none;
   /*This removes the resizable propety from the text areas*/
 }
-.my-form input[type="submit"] {
-  background-color: #333;
-  height: 35px;
-  width: 70px;
-  color: white;
-  border: none;
+.my-form textarea {
+  height: 80px;
 }

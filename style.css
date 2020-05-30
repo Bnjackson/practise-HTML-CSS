@@ -68,6 +68,7 @@ a:active {
   padding: 25px;
   margin: 20px;
 }
+
 .categories {
   border: 1px dotted red;
   background-color: pink;
@@ -94,7 +95,27 @@ a:active {
   background-color: #507575;
 }
 
-.my-form.form-group {
+.my-form .form-group {
+  padding-bottom: 15px;
 
+}
 
+.my-form label {
+  display: block;
+  /*The block property puts the labels on a new line*/
+}
+
+.my-form input[type="text"], .my-form textarea{
+  /*Square brackets are used to specify which elements are targetted in this example its inputs with the type="text"*/
+  padding: 8px;
+  width: 97%;
+  resize: none;
+  /*This removes the resizable propety from the text areas*/
+}
+.my-form input[type="submit"] {
+  background-color: #333;
+  height: 35px;
+  width: 70px;
+  color: white;
+  border: none;
 }

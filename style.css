@@ -145,3 +145,31 @@ a:active {
   box-sizing: border-box;
   /*Box sizing is a propety that sets how the width and height are calculated border-box includes the border and padding border into the width and height set. In this example the border and padding will be included into the 33% width*/
 }
+
+#main-block {
+  float: left;
+  width: 70%;
+}
+#sidebar {
+  float: right;
+  width: 30%;
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+.p-box{
+    width: 800px;
+    height: 500px;
+    border:1px solid #000;
+    margin-top: 30px;
+    position: relative;
+    /*position relative will make an element relative of its own postion so setting the top, right, bottom, left will adjust it away from its normal position*/
+}
+.p-box h1 {
+  position: absolute;
+  /*An element with the position: absolute is positioned relative to its nearest parent if the element has no positioned parents it will use the document body and move along with page scrolling*/
+  top:100px;
+}

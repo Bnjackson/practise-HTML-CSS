@@ -59,6 +59,10 @@ a:active {
   color: white;
 }
 
+.clr {
+  clear:both;
+}
+/*Clear:both will remove any floats above it. Clear is most commonly used after floating an element*/
 .box-1 {
   background-color: #333;
   color: #fff;
@@ -132,4 +136,12 @@ a:active {
 }
 .my-form textarea {
   height: 80px;
+}
+.block {
+  float: left;
+  width: 33%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  /*Box sizing is a propety that sets how the width and height are calculated border-box includes the border and padding border into the width and height set. In this example the border and padding will be included into the 33% width*/
 }

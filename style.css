@@ -167,6 +167,7 @@ a:active {
     margin-top: 30px;
     position: relative;
     /*position relative will make an element relative of its own postion so setting the top, right, bottom, left will adjust it away from its normal position*/
+    background-image: url("resources/background-image.jpg")
 }
 .p-box h1 {
   position: absolute;
@@ -182,4 +183,18 @@ a:active {
   position: fixed;
   /*The fixed position will position an element in a fixed place that will always stay the same even if the page is scrolled*/
   top:0;
+}
+/*CSS has psuedo classes that allow us to select indivual elements among a group of sibling elements*/
+.list li:first-child{
+  background: red;
+}
+.list li:nth-child(even) {
+  background: grey;
+}
+.list li:last-child {
+  background: blue;
+}
+
+.list li:nth-child(5) {
+  background: yellow;
 }

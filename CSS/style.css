@@ -1,0 +1,200 @@
+/*
+* {
+  margin:0;
+  padding:0;
+}
+The asterix controls every elements style on a page- this is called a reset
+*/
+body {
+  background-color:#dae0de;
+  font: normal, 16px, arial, helvetica, sans-serif;
+  /*Shorter way of specifying font includes font-weight, font-size and font-family.*/
+  line-height: 1.4em;
+  margin: 0;
+  /*Setting margin to 0 removes the spaces from the side exept for the top because headings have margin by default- margin is the area around elements to seperate them from other elements*/
+}
+
+a {
+  text-decoration: none;
+  /*Removes underline from anchor tags*/
+  color: black;
+  display: block;
+  /*Display block is needed to change an anchor tags width and height*/
+}
+
+a:hover {
+  color: white;
+}
+/*The hover selector styles elements when hovered over*/
+
+a:visited {
+  color: blue;
+}
+/*Styles elements you have visited*/
+
+a:active {
+  color: yellow;
+}
+/*Styles elment when you click on it*/
+
+
+.container {
+  width: 80%;
+  /*Setting the margin to a percentage makes it responsive so the container responds with the browser or device*/
+  margin: auto;
+  /*Margin auto sets a even margin on all sides- the same on all sides */
+}
+
+.button {
+  background-color: #333;
+  color: white;
+  border: none;
+  height: 30px;
+  width: 100px;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #FF4F1F;
+  color: white;
+}
+
+.clr {
+  clear:both;
+}
+/*Clear:both will remove any floats above it. Clear is most commonly used after floating an element*/
+.box-1 {
+  background-color: #333;
+  color: #fff;
+  border: 2px red solid;
+  /*Border size color type/style- the border goes around the content and padding*/
+  padding: 25px;
+  /*Padding controls the whitespace between the content box and the border*/
+  margin: 20px;
+  /*Margin controls the space around the element and seperates them from other elements*/
+}
+
+.box-1  h1{
+  font-family: times;
+  font-style:italic;
+  font-weight: bold;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  word-spacing: 0.2em;
+}
+
+.box-2 {
+  border: 2px dotted blue;
+  padding: 25px;
+  margin: 20px;
+}
+
+.categories {
+  border: 1px dotted red;
+  background-color: pink;
+  padding: 25px;
+  margin: 20px;
+}
+
+.categories h2 {
+    text-align: center;
+}
+
+.categories ul {
+    list-style: none;
+}
+
+.categories li {
+  padding-bottom: 6px;
+  border-bottom-style: solid;
+  border-bottom-color: grey;
+}
+
+.my-form {
+  margin: 20px;
+  padding: 20px;
+  background-color: #507575;
+}
+
+.my-form .form-group {
+  padding-bottom: 15px;
+
+}
+
+.my-form label {
+  display: block;
+  /*The block property puts the labels on a new line*/
+}
+
+.my-form input[type="text"], .my-form textarea{
+  /*Square brackets are used to specify which elements are targetted in this example its inputs with the type="text"*/
+  padding: 8px;
+  width: 97%;
+  resize: none;
+  /*This removes the resizable propety from the text areas*/
+}
+.my-form textarea {
+  height: 80px;
+}
+.block {
+  float: left;
+  width: 33%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  /*Box sizing is a propety that sets how the width and height are calculated border-box includes the border and padding border into the width and height set. In this example the border and padding will be included into the 33% width*/
+}
+
+#main-block {
+  float: left;
+  width: 70%;
+}
+#sidebar {
+  float: right;
+  width: 30%;
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+.p-box{
+    width: 800px;
+    height: 500px;
+    border:1px solid #000;
+    margin-top: 30px;
+    position: relative;
+    /*position relative will make an element relative of its own postion so setting the top, right, bottom, left will adjust it away from its normal position*/
+    background-image: url("resources/background-image.jpg")
+}
+.p-box h1 {
+  position: absolute;
+  /*An element with the position: absolute is positioned relative to its nearest parent if the element has no positioned parents it will use the document body and move along with page scrolling*/
+  top: 100px;
+}
+.p-box h2 {
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+}
+.fix-me {
+  position: fixed;
+  /*The fixed position will position an element in a fixed place that will always stay the same even if the page is scrolled*/
+  top:0;
+}
+/*CSS has psuedo classes that allow us to select indivual elements among a group of sibling elements*/
+.list li:first-child{
+  background: red;
+}
+.list li:nth-child(even) {
+  background: grey;
+}
+.list li:last-child {
+  background: blue;
+}
+
+.list li:nth-child(5) {
+  background: yellow;
+}
